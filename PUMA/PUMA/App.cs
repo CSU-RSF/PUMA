@@ -24,6 +24,9 @@ namespace PUMA
 
             // Initialize MainPage as a NavigationPag
             this.MainPage = new NavigationPage (new MainPage());
+
+            //TODO: Logo and icon guidelines for each platform
+            //TODO: Implement PCL settings solution
         }
 
         protected override void OnStart()

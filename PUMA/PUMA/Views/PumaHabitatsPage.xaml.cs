@@ -7,6 +7,7 @@ namespace PUMA
         public PumaHabitatsPage()
         {
             InitializeComponent();
+            //TODO: Add basic mapping component
         }
     }
 }

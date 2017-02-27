@@ -27,5 +27,7 @@ namespace PUMA
                 conn.Insert(new PumaTypeImage() { PumaTypeId = 1, ImageFilename = "Cougar2.jpg", Credit = "Cougar2 Credit" });
             }
         }
+
+        //TODO: Develop example JSON data pull from external database and store locally (instead of a seed file)
     }
 }
