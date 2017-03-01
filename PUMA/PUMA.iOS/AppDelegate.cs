@@ -25,6 +25,7 @@ namespace PUMA.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Xamarin.FormsMaps.Init();
 
             string dbPath = FileAccessHelper.GetLocalFilePath("db.db3");
 
