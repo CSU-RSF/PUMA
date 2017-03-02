@@ -9,10 +9,11 @@
   <ContentPage.Content>  
     <AbsoluteLayout>
       <Image Source="{local:ImageResource PUMA.Resources.Images.background.png}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Aspect="AspectFill" />
-      <Button Text="Introduction" Clicked="ToIntroduction" BackgroundColor="#77000000" TextColor="White" AbsoluteLayout.LayoutBounds=".5,.35,300,40" AbsoluteLayout.LayoutFlags="PositionProportional" BorderRadius="5" />
-      <Button Text="Puma Types" Clicked="ToPumaTypes" BackgroundColor="#77000000" TextColor="White" AbsoluteLayout.LayoutBounds=".5,.45,300,40" AbsoluteLayout.LayoutFlags="PositionProportional" BorderRadius="5" />
-      <Button Text="Habitats (Maps)" Clicked="ToPumaHabitats" BackgroundColor="#77000000" TextColor="White" AbsoluteLayout.LayoutBounds=".5,.55,300,40" AbsoluteLayout.LayoutFlags="PositionProportional" BorderRadius="5" />
+      <StackLayout Spacing="15" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds=".5,1,.8,1">
+        <Button Text="Introduction" Clicked="ToIntroduction" BackgroundColor="#77000000" TextColor="White" BorderRadius="5" />
+        <Button Text="Puma Types" Clicked="ToPumaTypes" BackgroundColor="#77000000" TextColor="White" BorderRadius="5" />
+        <Button Text="Habitats (Maps)" Clicked="ToPumaHabitats" BackgroundColor="#77000000" TextColor="White" BorderRadius="5" />
+      </StackLayout>
     </AbsoluteLayout>
   </ContentPage.Content>
-
 </ContentPage>
