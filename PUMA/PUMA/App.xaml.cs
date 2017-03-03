@@ -1,10 +1,9 @@
-﻿using System;
-using SQLite;
+﻿using SQLite;
 using Xamarin.Forms;
 
 namespace PUMA
 {
-    public class App : Application
+    public partial class App : Application
     {
         // Create variables to hold repository instances
         public static PumaTypeRepository PumaTypesRepo { get; private set; }
@@ -22,8 +21,10 @@ namespace PUMA
             PumaTypeImageRepo = new PumaTypeImageRepository();
             dbConn.SeedDB();
 
+            InitializeComponent();
+
             // Initialize MainPage as a NavigationPag
-            this.MainPage = new NavigationPage (new MainPage());
+            this.MainPage = new NavigationPage(new MainPage());
 
             //TODO: Logo and icon guidelines for each platform
             //TODO: Implement PCL settings solution
