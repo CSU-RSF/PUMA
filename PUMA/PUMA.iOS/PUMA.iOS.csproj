@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>PUMA.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>PUMA.iOS</AssemblyName>
+    <AssemblyName>PUMAiOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
