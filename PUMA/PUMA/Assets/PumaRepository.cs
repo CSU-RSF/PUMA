@@ -5,19 +5,19 @@ using PUMA.Models;
 namespace PUMA
 {
 
-    public class PumaTypeRepository : DBConnection
+    public class PumaRepository : DBConnection
 	{
 
-        public PumaTypeRepository()
+        public PumaRepository()
 		{
             // Create the Puma Type table (only if it's not yet created)
-            conn.CreateTable<PumaType>();
+            conn.CreateTable<Puma>();
 		}
 
-        public List<PumaType> GetAllPumaTypes()
+        public List<Puma> GetAllPumas()
         {
             // return a list of Puma Types saved to the table in the database
-            return (from p in conn.Table<PumaType>() select p).ToList();
+            return (from p in conn.Table<Puma>() select p).ToList();
         }
 
     }

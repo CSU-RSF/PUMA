@@ -11,7 +11,7 @@
       <Image Source="{local:ImageResource PUMA.Resources.Images.background.png}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Aspect="AspectFill" />
       <StackLayout Spacing="15" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds=".5,1,.8,1">
         <Button Text="Introduction" Clicked="ToIntroduction" Style="{StaticResource semiTransparentButton}" />
-        <Button Text="Puma Types" Clicked="ToPumaTypes" Style="{StaticResource semiTransparentButton}" />
+        <Button Text="Pumas" Clicked="ToPumas" Style="{StaticResource semiTransparentButton}" />
         <Button Text="Habitats (Maps)" Clicked="ToPumaHabitats" Style="{StaticResource semiTransparentButton}" />
       </StackLayout>
     </AbsoluteLayout>

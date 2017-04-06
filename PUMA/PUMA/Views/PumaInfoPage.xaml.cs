@@ -2,9 +2,9 @@
 
 namespace PUMA.Views
 {
-    public partial class PumaTypeInfoPage : ContentPage
+    public partial class PumaInfoPage : ContentPage
     {
-        public PumaTypeInfoPage()
+        public PumaInfoPage()
         {
             InitializeComponent();
         }

@@ -6,8 +6,8 @@ namespace PUMA
     public partial class App : Application
     {
         // Create variables to hold repository instances
-        public static PumaTypeRepository PumaTypesRepo { get; private set; }
-        public static PumaTypeImageRepository PumaTypeImageRepo { get; private set; }
+        public static PumaRepository PumasRepo { get; private set; }
+        public static PumaImageRepository PumaImageRepo { get; private set; }
 
         // Initialize app
         public App(string dbPath)
@@ -17,8 +17,8 @@ namespace PUMA
             DBConnection dbConn = new DBConnection(newConn);
 
             // Initialize Repositories and seed database
-            PumaTypesRepo = new PumaTypeRepository();
-            PumaTypeImageRepo = new PumaTypeImageRepository();
+            PumasRepo = new PumaRepository();
+            PumaImageRepo = new PumaImageRepository();
             dbConn.SeedDB();
 
             InitializeComponent();
